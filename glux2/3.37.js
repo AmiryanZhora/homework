@@ -6,7 +6,7 @@ const calcFunc = () => {
   let a = +prompt("a = ", 1);
   let b = +prompt("b = ", 1);
   for (let i = 0; i < 5; i++) {
-    let result = prompt("how much is " + a + "*" + b + "?");
+    let result = prompt("сколько будет " + a + "*" + b + "?");
     if (result != a * b) {
       wrongA++;
     } else {
@@ -19,8 +19,8 @@ const calcFunc = () => {
 calcFunc();
 
 if (correctA / (correctA + wrongA) < 0.75) {
-  alert("bro ure broke!");
+  alert("Пожалуйста, попросите срочно помощь у вашего преподавателя!");
 } else {
-  alert("not bad!");
+  alert("неплохо!");
 }
 console.log(correctA, wrongA);

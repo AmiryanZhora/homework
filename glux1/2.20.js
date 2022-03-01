@@ -1,13 +1,12 @@
-const maxSale = () => {
-  let i = 0;
-  let number = 100;
-  for (i = 0; i < arguments.length; i++) {
-    if (arguments[i] > number) {
-      number = arguments[i];
-    }
-  }
-  return number;
-};
+let counter = 0;
+let largest = 0;
+let numbers = +prompt("nums = ");
 
-const largest = maxSale(45, 123, 0, 433, 987, 123, 43, 344, 762, 100);
-console.log(largest);
+for (let i = 0; i <= 10; i++) {
+  numbers = +prompt("nums = ");
+  console.log(numbers);
+  if (largest < numbers) {
+    largest = numbers;
+  } else i++;
+}
+console.log("result =", largest);
